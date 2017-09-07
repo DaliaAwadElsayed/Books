@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <ImageView
+        android:id="@+id/imageid"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/books"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/booknameid"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/imageid"
+        android:layout_toRightOf="@+id/imageid"
+        android:layout_weight="1"
+        android:text="BOOK NAME"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/writerid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/booknameid"
+        android:layout_alignLeft="@+id/booknameid"
+        android:layout_alignRight="@+id/booknameid"
+        android:layout_alignStart="@+id/booknameid"
+        android:layout_below="@+id/booknameid"
+        android:text="WRITER"
+        android:textColor="#000"
+        android:textSize="18sp" />
+</RelativeLayout>
